@@ -1,0 +1,12 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Go back!</title>
+<h1>Oops wrong site</h1>
+<script>
+	if (window.opener) {
+		opener.location = 'index.html#hax';		
+	} else {
+		document.querySelector('h1').innerHTML = 'For whatever reason your browser is safe. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
+	}
+</script>
